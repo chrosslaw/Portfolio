@@ -1,0 +1,18 @@
+* {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  display: block;
+  background-color: grey;
+  min-height: 1vh;
+}
+
+main {
+  display: block;
+  background-color: blanchedalmond;
+  min-height: 4vh;
+}
