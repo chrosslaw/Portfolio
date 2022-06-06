@@ -82,9 +82,10 @@ section2 {
 /*------------------------------------------*/
 /* vvv  Main Homepage Image and Text Styling  vvv */
 .home-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("/img/CS17.jpg");
   border-radius: 12.5px;
+  box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +94,9 @@ section2 {
   z-index: 5;
   height: auto;
   width: 100%;
+  transition: all 2s;
 }
+
 .home-image-text {
   color: white;
   text-align: center;
@@ -118,6 +121,60 @@ section2 {
   font-family: "Roboto", fallback-font;
 }
 /* ^^^  Main Homepage Image and Text Styling  ^^^ */
+/*  vvv  AboutMe Card  vvv  */
+.about-card {
+  height: 100%;
+  width: 100%;
+  grid-area: 1/2 / 4/4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  margin: 20px 0;
+}
+
+.card {
+  box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+}
+
+.title {
+  color: grey;
+  font-size: 1.6em;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #ab5137;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.card h2 {
+  font-size: 2em;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
 /*------------------------------------------*/
 /* vvv Responsive Styling vvv */
 @media screen and (max-width: 650px) {
