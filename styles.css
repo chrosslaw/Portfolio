@@ -11,14 +11,28 @@ header {
   border: 0px;
   margin: 0px;
 }
+
 div.grid-container {
   display: grid;
   width: 100vw;
   height: 100vh;
   position: relative;
   margin: 0px;
-  grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
 }
+
+.flex-grid-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  margin: 0px;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
 /*------------------------------------------*/
 /* vvv NavBar vvv */
 nav {
@@ -37,6 +51,7 @@ nav a {
   padding: 15px 7px;
   outline: 1px black;
 }
+
 /* ^^^ NavBar ^^^ */
 /*------------------------------------------*/
 /*  vvv Header/Footer Styling vvv  */
@@ -51,12 +66,22 @@ footer {
   min-width: 100%;
   background-color: #2c365e;
   position: relative;
+  text-align: center;
 }
+
+footer a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: black;
+  padding: 20px;
+}
+
 #logo {
   object-fit: contain;
   width: auto;
   height: 200px;
 }
+
 /*  ^^^ Header/Footer Styling ^^^  */
 /*------------------------------------------*/
 /* vvv Main Content Background Styling vvv */
@@ -66,18 +91,22 @@ section {
 }
 
 section1 {
-  grid-row-start: 1;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 7;
+  height: 100vh;
+  width: 100vw;
+  top: 25vh;
+  position: absolute;
+  z-index: -1;
 }
+
 section2 {
-  grid-row-start: 7;
-  grid-row-end: 13;
-  grid-column-start: 1;
-  grid-column-end: 7;
+  height: 100vh;
+  width: 100vw;
+  top: 132vh;
   background-color: #79ab48;
+  position: absolute;
+  z-index: -1;
 }
+
 /* ^^^ Main Content Styling ^^^ */
 /*------------------------------------------*/
 /* vvv  Main Homepage Image and Text Styling  vvv */
@@ -90,11 +119,10 @@ section2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  grid-area: 2/2 / 11/6;
+  grid-area: 2/2 / 11/12;
   z-index: 5;
   height: auto;
   width: 100%;
-  transition: all 2s;
 }
 
 .home-image-text {
@@ -108,44 +136,37 @@ section2 {
   line-height: 1.2;
   padding: 0px;
 }
+
 .home-image-text h1 {
   font-size: 2vw;
   font-family: "Roboto", fallback-font;
   margin: 0px;
   padding: 0px;
 }
+
 .home-image-text p {
   margin: 0px;
   padding: 5px;
   font-size: 1.75vw;
   font-family: "Roboto", fallback-font;
 }
+
 /* ^^^  Main Homepage Image and Text Styling  ^^^ */
-/*  vvv  AboutMe Card  vvv  */
-.about-card {
-  height: 100%;
-  width: 100%;
-  grid-area: 1/2 / 4/4;
+/*----------------------------------------------------*/
+/*  vvv  vvv  */
+.head-shot-image {
+  flex: 1;
+  background-image: url("/img/Chris.jpg");
+  border-radius: 12.5px;
+  box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+
   z-index: 5;
-  margin: 20px 0;
-}
-
-.card {
-  box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color: white;
-}
-
-.title {
-  color: grey;
-  font-size: 1.6em;
+  width: 25vw;
+  height: auto;
+  max-height: 500px;
 }
 
 button {
@@ -161,30 +182,23 @@ button {
   font-size: 18px;
 }
 
-.card a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-.card h2 {
-  font-size: 2em;
-}
-
 button:hover,
 a:hover {
   opacity: 0.7;
 }
 
+/*  ^^^  ^^^  */
+
 /*------------------------------------------*/
 /* vvv Responsive Styling vvv */
 @media screen and (max-width: 650px) {
-  .home-image-text p {
-    font-size: 2.25vw;
-  }
   .home-image-text h1 {
-    font-size: 3vw;
+    font-size: 5vw;
+  }
+  .home-image-text p {
+    font-size: 4vw;
   }
   .home-image {
-    background-position: right;
+    background-position: top;
   }
 }
