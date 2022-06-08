@@ -21,18 +21,6 @@ div.grid-container {
   grid-template: repeat(12, 1fr) / repeat(12, 1fr);
 }
 
-.flex-grid-container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
-  position: relative;
-  margin: 0px;
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-}
-
 /*------------------------------------------*/
 /* vvv NavBar vvv */
 nav {
@@ -85,28 +73,32 @@ footer a {
 /*  ^^^ Header/Footer Styling ^^^  */
 /*------------------------------------------*/
 /* vvv Main Content Background Styling vvv */
-section {
-  width: 100%;
-  height: 100%;
-}
 
 section1 {
   height: 100vh;
   width: 100vw;
   top: 25vh;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 
 section2 {
   height: 100vh;
   width: 100vw;
-  top: 132vh;
+  top: 130vh;
   background-color: #79ab48;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 
+.grid-container.about-head {
+  grid-area: 2/8/5/12;
+  margin: 20px;
+}
+.grid-container.about-text {
+  grid-area: 7/1/13/13;
+  margin: 20px;
+}
 /* ^^^ Main Content Styling ^^^ */
 /*------------------------------------------*/
 /* vvv  Main Homepage Image and Text Styling  vvv */
@@ -121,8 +113,6 @@ section2 {
   position: relative;
   grid-area: 2/2 / 11/12;
   z-index: 5;
-  height: auto;
-  width: 100%;
 }
 
 .home-image-text {
@@ -155,28 +145,28 @@ section2 {
 /*----------------------------------------------------*/
 /*  vvv  vvv  */
 .head-shot-image {
-  flex: 1;
   background-image: url("/img/Chris.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  z-index: 5;
-  width: 25vw;
+  margin: 40px;
   height: auto;
-  max-height: 500px;
+  max-width: 500px;
+  z-index: 5;
+  grid-area: 1/1/7/7;
 }
 
 button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 8px 15px;
   color: white;
   background-color: #ab5137;
   text-align: center;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
@@ -186,7 +176,17 @@ button:hover,
 a:hover {
   opacity: 0.7;
 }
-
+.textcard {
+  border: thin;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin: 1%;
+  line-height: 1.5;
+  font-size: 18px;
+}
 /*  ^^^  ^^^  */
 
 /*------------------------------------------*/
@@ -200,5 +200,8 @@ a:hover {
   }
   .home-image {
     background-position: top;
+  }
+  .head-shot-image {
+    width: 80vw;
   }
 }
