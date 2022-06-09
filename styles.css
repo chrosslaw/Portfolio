@@ -25,19 +25,17 @@ div.grid-container {
 /* vvv NavBar vvv */
 nav {
   display: flex;
-  height: 1fr;
+  height: 8vh;
   margin: 0px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
-
-nav a {
-  display: flex;
-  flex: auto;
+nav div {
+  margin: 1vw;
+}
+a {
   text-align: center;
-  margin: 0px 2px;
-  padding: 15px 7px;
-  outline: 1px black;
+  text-decoration: none;
 }
 
 /* ^^^ NavBar ^^^ */
@@ -46,8 +44,9 @@ nav a {
 header,
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   margin: 0px;
   padding: 0px;
   min-height: 25vh;
@@ -57,12 +56,35 @@ footer {
   text-align: center;
 }
 
+footer .footer-top,
+footer .footer-bottom {
+  display: block;
+  height: 49%;
+  width: 100vw;
+}
+
+.footer-top button {
+  margin: auto;
+}
 footer a {
   text-decoration: none;
   color: black;
   padding: 20px;
 }
-
+.row {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.column-left {
+  float: left;
+  min-height: 100vh;
+  width: 33vw;
+}
+.column-right {
+  float: left;
+  min-height: 100vh;
+  width: 66vw;
+}
 #logo {
   object-fit: contain;
   width: auto;
@@ -144,7 +166,7 @@ section2 {
 /*----------------------------------------------------*/
 /*  vvv  vvv  */
 .head-shot-image {
-  background-image: url("/img/Chris.jpg");
+  background-image: url("./img/Chris.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
@@ -152,29 +174,31 @@ section2 {
   background-size: cover;
   margin: 40px;
   height: auto;
-  max-width: 500px;
+  max-width: 100%;
   z-index: 5;
-  grid-area: 1/1/7/7;
 }
 
 button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px 15px;
+  border: inset;
+  display: block;
+  padding: 5px 1vw;
   color: white;
   background-color: #ab5137;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
-  width: 100%;
   font-size: 18px;
 }
 
-button:hover,
-a:hover {
-  opacity: 0.7;
+button:hover {
+  background-color: yellow;
+  color: black;
 }
+button:active {
+  padding: 4px 0.9vw;
+  border: outset;
+}
+
 .textcard {
   border: thin;
   border-width: 1px;
@@ -186,6 +210,48 @@ a:hover {
   line-height: 1.5;
   font-size: 18px;
 }
+#contact-box {
+  display: none;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 30vh;
+  border: solid 1px;
+  top: 200%;
+  z-index: 15;
+  background-color: aquamarine;
+}
+div #contact-box {
+  position: relative;
+}
+#contact-box div #email,
+#contact-box div h3,
+#contact-box div h4 {
+  font-size: 1.5vw;
+}
+
+#contact-box div a {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+#closeMeButton {
+  background-color: white;
+  padding: 5px;
+  border-radius: 45px;
+  border: solid 1px black;
+}
+#closeMeButton:hover {
+  background-color: yellow;
+  color: black;
+}
+#closeMeButton:active {
+  padding: 3px;
+}
+
 /*  ^^^  ^^^  */
 
 /*------------------------------------------*/
@@ -200,7 +266,12 @@ a:hover {
   .home-image {
     background-position: top;
   }
-  .head-shot-image {
-    width: 80vw;
+  #contact-box div #email,
+  #contact-box div h3,
+  #contact-box div h4 {
+    font-size: 5vw;
+  }
+  #contact-box {
+    height: 50vh;
   }
 }
