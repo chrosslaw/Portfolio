@@ -12,9 +12,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="webkit-styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/32e46950bf.js"
+      defer
       crossorigin="anonymous"
     ></script>
   </head>
@@ -27,8 +28,10 @@
     </header>
 
     <nav>
-      <a href="">Link 1</a><a href="">Link 2</a><a href="">Link 3</a
-      ><a href="">Link 4</a>
+      <div><a href="">Link 1</a></div>
+      <div><a href="">Link 2</a></div>
+      <div><a href="">Link 3</a></div>
+      <div><a href="">Link 4</a></div>
     </nav>
 
     <main>
@@ -44,39 +47,67 @@
           </div>
         </div>
       </div>
-      <section2></section2>
-      <div class="grid-container" id="section2">
-        <div class="head-shot-image"></div>
+
+      <div class="row">
+        <div class="left-column">
+          <div class="head-shot-image"></div>
+        </div>
+        <div class="right-column">
+          <div>
+            <h2>About</h2>
+          </div>
+          <div>
+            <p class="textcard">Hi</p>
+          </div>
+        </div>
       </div>
+      <section2></section2>
     </main>
 
-    <div id="contact-box"></div>
+    <div id="contact-box" class="bounce-in-top rotate-out-center">
+      <div>
+        <h3>Chris Lawrence</h3>
+        <h4>720-236-7195</h4>
+        <div><a id="email" href="mailto:chris@chrosslaw.net">Email Me</a></div>
+      </div>
+
+      <div id="close">
+        <i id="closeMeButton" class="fa-solid fa-angles-down heartbeat"></i>
+      </div>
+    </div>
 
     <footer>
-      <a><button>Contact</button></a>
-      <a href="#"><i class="fa fa-dribbble fa-bounce bounce"></i></a>
-      <a
-        href="https://github.com/chrosslaw"
-        rel="noreferrer noopener"
-        target="_blank"
-        title="My Github Page"
-      >
-        <i class="fa-brands fa-github fa-spin fa-1x"> </i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/chris-lawrence-99627554/"
-        rel="noopener"
-        target="_blank"
-        title="My linkedin Page"
-        ><i class="fa fa-linkedin fa-shake fa-1x"></i
-      ></a>
-      <a
-        href="https://www.facebook.com/chrossl"
-        rel="noopener"
-        target="_blank"
-        title="My facebook Page"
-        ><i class="fa fa-facebook fa-flip fa-1x"></i
-      ></a>
+      <div>
+        <button id="showMeButton">Contact</button>
+      </div>
+      <div class="footer-bottom">
+        <a rel="noreferrer noopener"><i class="fa fa-dribbble fa-bounce"></i></a>
+        <a
+          href="https://discord.com/chrosslaw"
+          rel="noopener"
+          target="_blank"
+          title="My Github Page"
+        >
+          <i class="fa-brands fa-github fa-spin fa-1x"> </i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/chris-lawrence-99627554/#"
+          rel="noopener"
+          target="_blank"
+          title="My linkedin Page"
+          ><i class="fa fa-linkedin fa-shake fa-1x"></i
+        ></a>
+
+        <a
+          href="https://www.facebook.com/chrossl#"
+          target="_blank"
+          rel="noopener"
+          title="My facebook Page"
+          ><i class="fa fa-facebook fa-flip fa-1x"></i
+        ></a>
+      </div>
     </footer>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
