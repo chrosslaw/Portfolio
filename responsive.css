@@ -1,0 +1,25 @@
+/* vvv Responsive Styling vvv */
+@media screen and (max-width: 650px) {
+  .home-image-text h1 {
+    font-size: 5vw;
+  }
+  .home-image-text p {
+    font-size: 4vw;
+  }
+  .home-image {
+    background-position: top;
+  }
+  #contact-box div #email,
+  #contact-box div h3,
+  #contact-box div h4 {
+    font-size: 5vw;
+  }
+  #contact-box {
+    height: 50vh;
+  }
+  .right-column,
+  .left-column {
+    flex: 100%;
+    height: 50vh;
+  }
+}

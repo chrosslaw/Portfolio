@@ -1,131 +1,9 @@
-* {
-  font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body,
-html,
-header {
-  box-sizing: border-box;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
-}
-
-div.grid-container {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  margin: 0px;
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-}
-
-/*------------------------------------------*/
-/* vvv NavBar vvv */
-nav {
-  display: flex;
-  height: 8vh;
-  margin: 0px;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav div {
-  margin: 1vw;
-}
-a {
-  text-align: center;
-  text-decoration: none;
-}
-
-/* ^^^ NavBar ^^^ */
-/*------------------------------------------*/
-/*  vvv Header/Footer Styling vvv  */
-header,
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  margin: 0px;
-  padding: 0px;
-  min-height: 25vh;
-  min-width: 100%;
-  background-color: #1C3A94;
-  position: relative;
-  text-align: center;
-}
-
-footer .footer-top,
-footer .footer-bottom {
-  display: block;
-  height: 50%;
-  width: 100vw;
-}
-
-.footer-top button {
-  margin: auto;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-}
-.row {
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-column {
-  -ms-flex: 30%;
-  flex: 30%;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-column {
-  -ms-flex: 70%;
-  flex: 70%;
-  height: 100vh;
-}
-.left-column div,
-.right-column div {
-  margin-left: auto;
-  margin-right: auto;
-}
 #logo {
   object-fit: contain;
   width: auto;
   height: 200px;
 }
 
-/*  ^^^ Header/Footer Styling ^^^  */
-/*------------------------------------------*/
-/* vvv Main Content Background Styling vvv */
-
-section1 {
-  height: 100vh;
-  width: 100vw;
-  top: 25vh;
-  position: absolute;
-  z-index: -2;
-}
-
-section2 {
-  height: 101vh;
-  width: 100vw;
-  top: 130vh;
-  background-color: #93E3FA;
-  position: absolute;
-  z-index: -2;
-}
-
-/* ^^^ Main Content Styling ^^^ */
-/*------------------------------------------*/
 /* vvv  Main Homepage Image and Text Styling  vvv */
 .home-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
@@ -183,14 +61,14 @@ section2 {
   z-index: 5;
   justify-self: center;
 }
-.about-head{
+.about-head {
   grid-area: 2/7/5/11;
 }
-.about-head h2{
+.about-head h2 {
   text-align: center;
-  margin-top:auto;
+  margin-top: auto;
   margin-bottom: auto;
-  font-size:6vw;
+  font-size: 6vw;
 }
 .grid-container .about-text {
   grid-area: 7/2/12/12;
@@ -200,15 +78,15 @@ button {
   display: block;
   padding: 5px 1vw;
   color: white;
-  background-color: #FA691A;
+  background-color: #fa691a;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
   font-size: 18px;
 }
 
-button:hover{
-  background-color: #C74524;
+button:hover {
+  background-color: #c74524;
 }
 
 button:active {
@@ -217,7 +95,7 @@ button:active {
 }
 
 .textcard {
-  background-color: #FAF693;
+  background-color: #faf693;
   border: thin;
   border-width: 1px;
   border-style: solid;
@@ -228,14 +106,13 @@ button:active {
   font-size: 1vw;
 }
 
-.textcard p a{
-  padding:8px;
+.textcard p a {
+  padding: 8px;
   background-color: rebeccapurple;
   border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
-  color:white;
-
+  color: white;
 }
 #contact-box {
   display: none;
@@ -244,25 +121,21 @@ button:active {
   justify-content: space-around;
   position: absolute;
   text-align: center;
-  width: 100vw;
+  width: 50vw;
   height: 30vh;
   border: solid 1px;
   top: 200%;
   z-index: 15;
-  background-color: aquamarine;
+  background-color: #fa691a;
+  left: 25%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
 }
-div #contact-box {
-  position: relative;
-}
+
 #contact-box div #email,
 #contact-box div h3,
 #contact-box div h4 {
   font-size: 1.5vw;
-}
-
-#contact-box div a {
-  margin: 0px;
-  padding-bottom: 10px;
 }
 
 #closeMeButton {
@@ -280,30 +153,3 @@ div #contact-box {
 }
 
 /*  ^^^  ^^^  */
-
-/*------------------------------------------*/
-/* vvv Responsive Styling vvv */
-@media screen and (max-width: 650px) {
-  .home-image-text h1 {
-    font-size: 5vw;
-  }
-  .home-image-text p {
-    font-size: 4vw;
-  }
-  .home-image {
-    background-position: top;
-  }
-  #contact-box div #email,
-  #contact-box div h3,
-  #contact-box div h4 {
-    font-size: 5vw;
-  }
-  #contact-box {
-    height: 50vh;
-  }
-  .right-column,
-  .left-column {
-    flex: 100%;
-    height: 50vh;
-  }
-}

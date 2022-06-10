@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+/* vvv NavBar vvv */
+nav {
+  display: flex;
+  height: 8vh;
+  margin: 0px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav div {
+  margin: 1vw;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
+/* ^^^ NavBar ^^^ */
+/*------------------------------------------*/
+
+/*------------------------------------------*/
+
+/*  vvv Header/Footer Styling vvv  */
+header,
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  min-height: 25vh;
+  min-width: 100%;
+  background-color: #1c3a94;
+  position: relative;
+  text-align: center;
+}
+
+footer .footer-top,
+footer .footer-bottom {
+  display: block;
+  height: 50%;
+  width: 100vw;
+}
+
+.footer-top button {
+  margin: auto;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+/*  ^^^ Header/Footer Styling ^^^  */
+/*------------------------------------------*/
+/* vvv Main Content Background Styling vvv */
+
+section1 {
+  height: 100vh;
+  width: 100vw;
+  top: 25vh;
+  position: absolute;
+  z-index: -2;
+}
+
+section2 {
+  height: 101vh;
+  width: 100vw;
+  top: 130vh;
+  background-color: #93e3fa;
+  position: absolute;
+  z-index: -2;
+}
+div.grid-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0px;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-column {
+  -ms-flex: 30%;
+  flex: 30%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-column {
+  -ms-flex: 70%;
+  flex: 70%;
+  height: 100vh;
+}
+
+.left-column div,
+.right-column div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ^^^ Main Content Styling ^^^ */
+/*------------------------------------------*/
