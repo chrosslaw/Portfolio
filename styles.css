@@ -51,7 +51,7 @@ footer {
   padding: 0px;
   min-height: 25vh;
   min-width: 100%;
-  background-color: #2c365e;
+  background-color: #1C3A94;
   position: relative;
   text-align: center;
 }
@@ -116,10 +116,10 @@ section1 {
 }
 
 section2 {
-  height: 100vh;
+  height: 101vh;
   width: 100vw;
   top: 130vh;
-  background-color: #79ab48;
+  background-color: #93E3FA;
   position: absolute;
   z-index: -2;
 }
@@ -129,7 +129,7 @@ section2 {
 /* vvv  Main Homepage Image and Text Styling  vvv */
 .home-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("/img/CS17.jpg");
+    url("./img/CS17.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
@@ -170,7 +170,7 @@ section2 {
 /*----------------------------------------------------*/
 /*  vvv  vvv  */
 .head-shot-image {
-  background-image: url("/img/Chris.jpg");
+  background-image: url("./img/Chris.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
@@ -183,38 +183,59 @@ section2 {
   z-index: 5;
   justify-self: center;
 }
-
+.about-head{
+  grid-area: 2/7/5/11;
+}
+.about-head h2{
+  text-align: center;
+  margin-top:auto;
+  margin-bottom: auto;
+  font-size:6vw;
+}
+.grid-container .about-text {
+  grid-area: 7/2/12/12;
+}
 button {
   border: inset;
   display: block;
   padding: 5px 1vw;
   color: white;
-  background-color: #ab5137;
+  background-color: #FA691A;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
   font-size: 18px;
 }
 
-button:hover {
-  background-color: yellow;
-  color: black;
+button:hover{
+  background-color: #C74524;
 }
+
 button:active {
   padding: 4px 0.9vw;
   border: outset;
 }
 
 .textcard {
+  background-color: #FAF693;
   border: thin;
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-  padding: 20px;
-  margin: 1%;
+  padding: 10px 20px;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 1vw;
+}
+
+.textcard p a{
+  padding:8px;
+  background-color: rebeccapurple;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color:white;
+
 }
 #contact-box {
   display: none;
