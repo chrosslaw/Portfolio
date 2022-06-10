@@ -55,20 +55,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
-  margin-top: auto;
+  margin-top: 10%;
   margin-bottom: auto;
-  width: 80%;
+  max-width: 80%;
   z-index: 5;
   justify-self: center;
 }
 .about-head {
-  grid-area: 2/7/5/11;
+  margin-top: 10%;
+  justify-self: center;
+  color: white;
 }
 .about-head h2 {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 6vw;
+  font-size: 3vw;
+}
+.left-column h2 {
+  font-size: 3vw;
 }
 .grid-container .about-text {
   grid-area: 7/2/12/12;
@@ -77,43 +82,61 @@ button {
   border: inset;
   display: block;
   padding: 5px 1vw;
-  color: white;
-  background-color: #fa691a;
+  color: #363636;
+  background-color: #e2fa25;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
   font-size: 18px;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #c74524;
+  background-color: #32fa81;
+  color: black;
+  transition: 1s all;
 }
 
 button:active {
   padding: 4px 0.9vw;
   border: outset;
 }
+nav div a {
+  padding: 9px 1.2vw;
+  background-color: #e2fa25;
+  color: #363636;
+  border-radius: 45px;
+  font-weight: bold;
+}
+div a,
+a {
+  text-align: center;
+  text-decoration: none;
+}
+nav div {
+  margin: 1vw;
+}
+nav div a:hover {
+  background-color: #32fa81;
+  color: black;
 
+  transition: 1s all;
+}
+nav div a {
+  padding: 6px 1w;
+}
 .textcard {
-  background-color: #faf693;
-  border: thin;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-  padding: 10px 20px;
+  padding: 10px;
   line-height: 1.5;
   font-size: 1vw;
+  width: 80%;
+  height: 65%;
+  position: relative;
+  background: rgba(204, 193, 193, 0.9);
+  margin-top: 15%;
+  border-radius: 12px;
 }
 
-.textcard p a {
-  padding: 8px;
-  background-color: rebeccapurple;
-  border-radius: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
 #contact-box {
   display: none;
   flex-flow: column nowrap;
@@ -121,35 +144,57 @@ button:active {
   justify-content: space-around;
   position: absolute;
   text-align: center;
-  width: 50vw;
+  width: 33vw;
   height: 30vh;
   border: solid 1px;
   top: 200%;
   z-index: 15;
-  background-color: #fa691a;
-  left: 25%;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
+  left: 33vw;
+  border-radius: 45px;
+  background-image: url(img/background2.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#contact-box div #email,
+#email,
 #contact-box div h3,
 #contact-box div h4 {
   font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 #closeMeButton {
-  background-color: white;
+  background-color: #e2fa25;
   padding: 5px;
   border-radius: 45px;
-  border: solid 1px black;
+  border: solid 1px #363636;
+  transition: 1s all;
 }
 #closeMeButton:hover {
-  background-color: yellow;
+  background-color: #32fa81;
   color: black;
 }
 #closeMeButton:active {
   padding: 3px;
+}
+.footer-top button {
+  margin: auto;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+#dribble {
+  --fa-bounce-height: 50px;
+  --fa-bounce-rebound: 10px;
+  --fa-bounce-jump-scale-x: 1.5;
+}
+footer a:hover {
+  color: red;
 }
 
 /*  ^^^  ^^^  */

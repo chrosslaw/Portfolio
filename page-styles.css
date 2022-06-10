@@ -14,14 +14,9 @@ nav {
   margin: 0px;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #258efa;
 }
-nav div {
-  margin: 1vw;
-}
-a {
-  text-align: center;
-  text-decoration: none;
-}
+
 /* ^^^ NavBar ^^^ */
 /*------------------------------------------*/
 
@@ -50,14 +45,6 @@ footer .footer-bottom {
   width: 100vw;
 }
 
-.footer-top button {
-  margin: auto;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-}
 /*  ^^^ Header/Footer Styling ^^^  */
 /*------------------------------------------*/
 /* vvv Main Content Background Styling vvv */
@@ -65,18 +52,25 @@ footer a {
 section1 {
   height: 100vh;
   width: 100vw;
-  top: 25vh;
+  top: 30vh;
   position: absolute;
   z-index: -2;
+  background-image: url(img/background-main.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section2 {
-  height: 101vh;
+  height: 107vh;
   width: 100vw;
   top: 130vh;
-  background-color: #93e3fa;
   position: absolute;
   z-index: -2;
+  background-image: url(img/background2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 div.grid-container {
   display: grid;
@@ -101,6 +95,7 @@ div.grid-container {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .right-column {
