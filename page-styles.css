@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   padding: 0px;
   border: 0px;
   margin: 0px;
@@ -66,8 +66,9 @@ section2 {
   width: 100vw;
   top: 130vh;
   position: absolute;
-  z-index: -2;
-  background-image: url(img/background2.png);
+  background-color: ;
+  z-index: -3;
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
