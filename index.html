@@ -24,14 +24,14 @@
 
   <body>
     <header>
-      <a href="/">
+      <a>
         <img id="logo" src="./img/logo.png" alt="Chrosslaw Logo" />
       </a>
     </header>
 
     <nav>
       <div>
-        <a><i class="fa-solid fa-house"></i>Home</a>
+        <a class="active-link"><i class="fa-solid fa-house"></i>Home</a>
       </div>
       <div><a>Link 2</a></div>
       <div><a>Link 3</a></div>
@@ -39,7 +39,10 @@
     </nav>
 
     <main>
-      <section1></section1>
+      <video id="background-video" autoplay loop muted poster="./img/bg.mp4">
+        <source src="./img/bg.mp4" type="video/mp4" />
+      </video>
+
       <div class="grid-container">
         <div class="home-image kenburns-bottom">
           <div class="home-image-text">

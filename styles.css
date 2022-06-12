@@ -4,6 +4,7 @@
   height: 200px;
 }
 
+
 /* vvv  Main Homepage Image and Text Styling  vvv */
 .home-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
@@ -54,17 +55,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 40vh;
   margin-top: 10%;
   margin-bottom: auto;
-  max-width: 80%;
+  max-width: 70%;
   z-index: 5;
   justify-self: center;
 }
 .about-head {
   margin-top: 10%;
   justify-self: center;
-  color: white;
+  font-family: roboto;
 }
 .about-head h2 {
   text-align: center;
@@ -151,7 +152,7 @@ nav div a {
   z-index: 15;
   left: 33vw;
   border-radius: 45px;
-  background-image: url(img/background2.png);
+  background-image: url(img/background2.webp);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;

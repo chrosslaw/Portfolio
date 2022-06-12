@@ -52,25 +52,25 @@ footer .footer-bottom {
 section1 {
   height: 100vh;
   width: 100vw;
-  top: 30vh;
-  position: absolute;
+  top: 0;
+  position: fixed;
   z-index: -2;
-  background-image: url(img/background-main.png);
-  background-position: left bottom;
+  background-image: url(img/bg.gif);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 section2 {
-  height: 107vh;
+  height: 100vh;
   width: 100vw;
   top: 130vh;
   position: absolute;
   z-index: -2;
-  background-image: url(img/background2.svg);
+  background-image: url(img/background2.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 div.grid-container {
   display: grid;
@@ -108,6 +108,23 @@ div.grid-container {
 .right-column div {
   margin-left: auto;
   margin-right: auto;
+}
+.active-link,
+.active-link:hover{
+  background-color:grey;
+  color:black;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /* ^^^ Main Content Styling ^^^ */
