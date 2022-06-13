@@ -4,11 +4,10 @@
   height: 200px;
 }
 
-
 /* vvv  Main Homepage Image and Text Styling  vvv */
 .home-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("./img/CS17.jpg");
+    url("/img/CS17.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
@@ -49,7 +48,7 @@
 /*----------------------------------------------------*/
 /*  vvv  vvv  */
 .head-shot-image {
-  background-image: url("./img/Chris.jpg");
+  background-image: url("/img/Chris.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
@@ -63,26 +62,40 @@
   justify-self: center;
   border-radius: 45%;
 }
+
 .about-head {
   margin-top: 10%;
   justify-self: center;
 }
+
 .about-head h2 {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   font-size: 3vw;
 }
+
 .left-column h2 {
   font-size: 3vw;
 }
+
+div.grid-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0px;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
 .grid-container .about-text {
   grid-area: 7/2/12/12;
 }
-button {
+
+div button {
   border: inset;
   display: block;
-  padding: 5px 1vw;
+  padding: 9px 1.3vw;
   color: #363636;
   background-color: #e2fa25;
   text-align: center;
@@ -102,48 +115,86 @@ button:active {
   padding: 4px 0.9vw;
   border: outset;
 }
+
 nav div a {
-  padding: 9px 1.2vw;
   background-color: #e2fa25;
   color: #363636;
   border-radius: 45px;
   font-weight: bold;
+  text-align: center;
 }
+
 div a,
 a {
   text-align: center;
   text-decoration: none;
 }
+
 nav div {
-  margin: 1vw;
+  padding: 10px 1.3vw;
 }
+
 nav div a:hover {
   background-color: #32fa81;
   color: black;
-
   transition: 1s all;
 }
+
 nav div a {
-  padding: 6px 1w;
+  padding: 10px 1.5vw;
+  font-family: "Roboto", fallback-font;
 }
+
+.dropdown {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  cursor: pointer;
+  z-index: 6;
+  position: absolute;
+  margin: 0px;
+  float: right;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  margin: 0px 5px;
+  float: right;
+}
+.dropdown-content div {
+  margin: 0px;
+}
+.show {
+  display: block;
+}
+
 .textcard {
   padding: 10px;
   font-size: 1.5vw;
   width: 60%;
-  height:auto;
+  height: auto;
   position: relative;
-  margin-top:5%;
+  margin-top: 5%;
   border-radius: 12px;
 }
-.right-column h2{
-  font-size:5vw;
+
+.right-column h2 {
+  font-size: 5vw;
   text-align: center;
   margin-top: 10%;
 }
-.textcard p{
+
+.textcard p {
   line-height: 1.5;
   font-size: 1.5vw;
 }
+
 #contact-box {
   display: none;
   flex-flow: column nowrap;
@@ -154,7 +205,7 @@ nav div a {
   width: 33vw;
   height: 30vh;
   border: solid 1px;
-  top: 200%;
+  top: 200vh;
   z-index: 15;
   left: 33vw;
   border-radius: 45px;
@@ -172,6 +223,9 @@ nav div a {
   color: black;
   font-weight: bold;
 }
+#email {
+  color: blue;
+}
 
 #closeMeButton {
   background-color: #e2fa25;
@@ -180,26 +234,32 @@ nav div a {
   border: solid 1px #363636;
   transition: 1s all;
 }
+
 #closeMeButton:hover {
   background-color: #32fa81;
   color: black;
 }
+
 #closeMeButton:active {
   padding: 3px;
 }
+
 .footer-top button {
   margin: auto;
 }
+
 footer a {
   text-decoration: none;
   color: black;
   padding: 20px;
 }
+
 #dribble {
   --fa-bounce-height: 50px;
   --fa-bounce-rebound: 10px;
   --fa-bounce-jump-scale-x: 1.5;
 }
+
 footer a:hover {
   color: red;
 }

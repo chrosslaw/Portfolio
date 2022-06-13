@@ -111,9 +111,10 @@ div.grid-container {
   margin-right: auto;
 }
 .active-link,
-.active-link:hover{
-  background-color:grey;
-  color:black;
+.active-link:hover {
+  background-color: grey;
+  color: black;
+  cursor: default;
 }
 
 #background-video {

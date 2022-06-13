@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/css/webkit-styles.css" />
-    <script src="script.js" defer></script>
+    <script src="/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/32e46950bf.js"
       defer
@@ -25,13 +25,12 @@
   <body>
     <header>
       <a>
-        <img id="logo" src="./img/logo.png" alt="Chrosslaw Logo" />
+        <img id="logo" src="/img/logo.png" alt="Chrosslaw Logo" />
       </a>
     </header>
-
     <nav>
       <div>
-        <a class="active-link"><i class="fa-solid fa-house"> </i> Home</a>
+        <a href="/index.html"><i class="fa-solid fa-house"> </i> Home</a>
       </div>
 
       <div class="dropdown">
@@ -43,61 +42,26 @@
           </a>
         </div>
         <div class="dropdown-content" id="myDropdown">
-          <a href="/pages/work.html"><i class="fa-solid fa-toolbox"></i> Work</a>
-          <a href="/pages/education.html"><i class="fa-solid fa-book-open"></i> Education</a>
-          <a href="/pages/skills.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Skills</a>
+          <a href="/pages/work.html"
+            ><i class="fa-solid fa-toolbox"></i> Work</a
+          >
+          <a href="/pages/education.html" class="active-link"
+            ><i class="fa-solid fa-book-open"></i> Education</a
+          >
+          <a href="/pages/skills.html"
+            ><i class="fa-solid fa-magnifying-glass-chart"></i> Skills</a
+          >
         </div>
       </div>
 
       <div>
         <a href="/pages/projects.html"
-          ><i class="fa-solid fa-folder-closed"></i> Projects</a
+          ><i class="fa-regular fa-folder-closed"></i> Projects</a
         >
       </div>
     </nav>
 
-    <main>
-      <video id="background-video" autoplay loop muted poster="./img/bg.mp4">
-        <source src="./img/bg.mp4" type="video/mp4" />
-      </video>
-
-      <div class="grid-container">
-        <div class="home-image kenburns-bottom">
-          <div class="home-image-text">
-            <div class="focus-in-contract-bck">
-              <h1>A DAY IN THE LIFE</h1>
-              <p>OF A</p>
-              <h1>COMPUTER SCIENCE STUDENT</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="left-column">
-          <div class="about-head">
-            <h2>Hi. I'm Chris.</h2>
-          </div>
-          <div class="head-shot-image"></div>
-        </div>
-        <div class="right-column">
-          <h2>About</h2>
-          <div class="textcard">
-            <p>
-              This page will hopefully display my creativity and some of the
-              skills I’ve learned during college. I started programming around
-              four years ago and can not get enough and am open to freelance
-              work or even new career opportunities. My preferred languages are
-              Python, Javascript, and C#, and my career goals are aimed at
-              software development or web development. Check the experience tab
-              for a complete list of skills and language knowledge.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <section2></section2>
-    </main>
+    <main></main>
 
     <div id="contact-box" class="bounce-in-top rotate-out-center">
       <div>
@@ -107,13 +71,13 @@
       </div>
 
       <div id="close">
-        <a id="closeMeButton" class="fa-solid fa-angles-down heartbeat"></a>
+        <i id="closeMeButton" class="fa-solid fa-angles-down heartbeat"></i>
       </div>
     </div>
 
     <footer>
       <div>
-        <button id="showMeButton">Contact</a>
+        <button id="showMeButton">Contact</button>
       </div>
       <div class="footer-bottom">
         <a rel="noreferrer noopener"
