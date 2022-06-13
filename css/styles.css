@@ -209,7 +209,7 @@ nav div a {
   z-index: 15;
   left: 33vw;
   border-radius: 45px;
-  background-image: url(/img/background2.webp);
+  background-image: url(img/background2.webp);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
