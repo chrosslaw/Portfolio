@@ -64,14 +64,13 @@ section1 {
 section2 {
   height: 100vh;
   width: 100vw;
-  top: 130vh;
+  top: 50vh;
   position: absolute;
-  background-color: ;
+  background-color: gray;
   z-index: -3;
-  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 div.grid-container {
   display: grid;
