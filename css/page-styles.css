@@ -12,7 +12,7 @@ nav {
   display: flex;
   height: 8vh;
   margin: 0px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: #258efa;
 }
@@ -44,7 +44,11 @@ footer .footer-bottom {
   height: 50%;
   width: 100vw;
 }
-
+.fixed-bottom{
+  bottom:0;
+  position:absolute;
+  overflow: hidden;
+}
 /*  ^^^ Header/Footer Styling ^^^  */
 /*------------------------------------------*/
 /* vvv Main Content Background Styling vvv */
