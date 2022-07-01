@@ -1,53 +1,71 @@
 /* vvv Responsive Styling vvv */
+@media screen and (max-width: 810px) {
+  #textcard {
+    font-size: 1.25em;
+    width: 90%;
+    height: 90%;
+    margin: 0px;
+  }
+}
 @media screen and (max-width: 650px) {
   .home-image-text h1 {
     font-size: 5vw;
+  }
+  #textcard {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    font-size: 1.1em;
   }
 
   .home-image-text p {
     font-size: 4vw;
   }
+
   .home-image {
     background-position: top;
   }
+
   .head-shot-image {
-    min-height: 40vh;
-    max-width: 70%;
     margin-top: 20px;
+    height: 60vw;
+    width: 60vw;
   }
+
   .about-head h2 {
-    font-size: 7vw;
+    font-size: 8vw;
   }
-  .textcard {
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-  }
-  .textcard p {
-    font-size: 5vw;
-  }
+
   .dropdown-content a {
     float: none;
   }
+
   nav div a {
     font-size: 3.7vw;
   }
+
   #contact-box div #email,
   #contact-box div h3,
   #contact-box div h4 {
     font-size: 5vw;
   }
+
   #contact-box {
     height: 50vh;
     width: 50vw;
     left: 25vw;
   }
+
   .row {
     display: block;
     height: 100vh;
+    margin: 0px;
   }
+
   .right-column,
   .left-column {
     height: 50vh;
+    margin: 0px;
+    position: inherit;
   }
 }

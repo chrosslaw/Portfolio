@@ -7,7 +7,7 @@
 /* vvv  Main Homepage Image and Text Styling  vvv */
 .home-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("/img/CS17.jpg");
+    url("../img/CS17.jpg");
   border-radius: 12.5px;
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
@@ -48,30 +48,25 @@
 /*----------------------------------------------------*/
 /*  vvv  vvv  */
 .head-shot-image {
-  background-image: url("/img/Chris.jpg");
-  border-radius: 12.5px;
+  background-image: url("../img/Chris.jpg");
+
   box-shadow: -35px -9px 22px -6px rgba(30, 30, 60, 0.79);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 40vh;
-  margin-top: 10%;
   margin-bottom: auto;
-  max-width: 70%;
-  z-index: 5;
-  justify-self: center;
-  border-radius: 45%;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
 }
 
 .about-head {
-  margin-top: 10%;
   justify-self: center;
 }
 
 .about-head h2 {
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   font-size: 3vw;
 }
 
@@ -167,21 +162,18 @@ nav div a {
   margin: 0px 5px;
   float: right;
 }
+
 .dropdown-content div {
   margin: 0px;
 }
+
 .show {
   display: block;
 }
-
-.textcard {
-  padding: 10px;
-  font-size: 1.5vw;
-  width: 60%;
-  height: auto;
-  position: relative;
-  margin-top: 5%;
-  border-radius: 12px;
+.full-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: red;
 }
 
 .right-column h2 {
@@ -190,9 +182,16 @@ nav div a {
   margin-top: 10%;
 }
 
-.textcard p {
-  line-height: 1.5;
+#textcard {
+  padding: 10px;
   font-size: 1.5vw;
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin-top: 5%;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-size: 1.75em;
 }
 
 #contact-box {
@@ -209,7 +208,7 @@ nav div a {
   z-index: 15;
   left: 33vw;
   border-radius: 45px;
-  background-image: url(img/background2.webp);
+  background-image: url(../img/background2.webp);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,6 +222,7 @@ nav div a {
   color: black;
   font-weight: bold;
 }
+
 #email {
   color: blue;
 }
