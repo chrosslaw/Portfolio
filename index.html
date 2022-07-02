@@ -1,141 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chris' World</title>
-    <meta name="description" content="Portfolio" />
-    <meta name="author" content="Chris Lawrence" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/page-styles.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./css/webkit-styles.css" />
-    <script src="./script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/32e46950bf.js"
-      defer
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chris' World</title>
+  <meta name="description" content="Portfolio" />
+  <meta name="author" content="Chris Lawrence" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/page-styles.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/webkit-styles.css" />
+  <script src="./script.js" defer></script>
+  <script src="https://kit.fontawesome.com/32e46950bf.js" defer crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
       <a>
         <img id="logo" src="./img/logo.png" alt="Chrosslaw Logo" />
       </a>
-    </header>
+    </div>
+  </header>
 
-    <nav>
+  <nav>
+    <div>
+      <a class="active-link"><i class="fa-solid fa-house"> </i> Home</a>
+    </div>
+
+    <div class="dropdown">
       <div>
-        <a class="active-link"><i class="fa-solid fa-house"> </i> Home</a>
+        <a class="dropbtn" onclick="dropFunction()"><i class="fa-solid fa-user"></i> Experience<i
+            class="fa fa-caret-down"></i>
+        </a>
       </div>
-
-      <div class="dropdown">
-        <div>
-          <a class="dropbtn" onclick="dropFunction()"
-            ><i class="fa-solid fa-user"></i> Experience<i
-              class="fa fa-caret-down"
-            ></i>
-          </a>
-        </div>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="./pages/work.html"><i class="fa-solid fa-toolbox"></i> Work</a>
-          <a href="./pages/education.html"><i class="fa-solid fa-book-open"></i> Education</a>
-          <a href="./pages/skills.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Skills</a>
-        </div>
-      </div>
-
-      <div>
-        <a href="./pages/projects.html"
-          ><i class="fa-solid fa-folder-closed"></i> Projects</a
-        >
-      </div>
-    </nav>
-
-    <main>
-
-      <div class="grid-container">
-        <div class="home-image kenburns-bottom">
-          <div class="home-image-text">
-            <div class="focus-in-contract-bck">
-              <h1>A DAY IN THE LIFE</h1>
-              <p>OF A</p>
-              <h1>COMPUTER SCIENCE STUDENT</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="left-column">
-          <div class="about-head">
-            <h2 class="text-pop-up-top">Hi. I'm Chris.</h2>
-          </div>
-          <div class="head-shot-image"></div>
-        </div>
-        <div class="right-column">
-          <div class="about-head">
-          <h2 class="text-pop-up-top">About</h2>
-          </div>
-          <div id="textcard">
-    
-          </div>
-        </div>
-      </div>
-      <div id="test"></div>
-      <section2></section2>
-    </main>
-
-    <div id="contact-box" class="bounce-in-top rotate-out-center">
-      <div>
-        <h3>Chris Lawrence</h3>
-        <h4>720-236-7195</h4>
-        <a id="email" href="mailto:chris@chrosslaw.net">-Email Me-</a>
-      </div>
-
-      <div id="close">
-        <a id="closeMeButton" class="fa-solid fa-angles-down heartbeat"></a>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="./pages/work.html"><i class="fa-solid fa-toolbox"></i> Work</a>
+        <a href="./pages/education.html"><i class="fa-solid fa-book-open"></i> Education</a>
+        <a href="./pages/skills.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Skills</a>
       </div>
     </div>
 
-    <footer>
+    <div>
+      <a href="./pages/projects.html"><i class="fa-solid fa-folder-closed"></i> Projects</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="grid-container">
+      <div class="home-image kenburns-bottom">
+        <div class="home-image-text">
+          <div class="focus-in-contract-bck">
+            <h1>A DAY IN THE LIFE</h1>
+            <p>OF A</p>
+            <h1>COMPUTER SCIENCE STUDENT</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
       <div>
-        <button id="showMeButton">Contact</a>
+        <div class="middle-column">
+          <div class="about-head">
+            <h2>Hi. I'm Chris.</h2>
+          </div>
+          <div class="head-shot-image"></div>
+
+          <div class="about-head">
+            <h2>About</h2>
+          </div>
+          <div id="textcard"></div>
+        </div>
+      </div>
+      <div id="test"></div>
+    </div>
+  </main>
+
+  <div id="contact-box" class="bounce-in-top rotate-out-center">
+    <div>
+      <h3>Chris Lawrence</h3>
+      <h4>720-236-7195</h4>
+      <a id="email" href="mailto:chris@chrosslaw.net">-Email Me-</a>
+    </div>
+
+    <div id="close">
+      <a id="closeMeButton" class="fa-solid fa-angles-down heartbeat"></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-top">
+        <button id="showMeButton"><a>Contact</a></button>
       </div>
       <div class="footer-bottom">
-        <a rel="noreferrer noopener"
-          ><i id="dribble" class="fa fa-dribbble fa-bounce fa-2x"></i
-        ></a>
-        <a
-          href="https://github.com/chrosslaw"
-          rel="noopener"
-          target="_blank"
-          title="My Github Page"
-        >
+        <a rel="noreferrer noopener"><i id="dribble" class="fa fa-dribbble fa-bounce fa-2x"></i></a>
+
+        <a href="https://github.com/chrosslaw" rel="noopener" target="_blank" title="My Github Page">
           <i class="fa-brands fa-github fa-spin-pulse fa-2x"> </i>
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/chris-lawrence-99627554/#"
-          rel="noopener"
-          target="_blank"
-          title="My linkedin Page"
-          ><i class="fa fa-linkedin fa-shake fa-2x"></i
-        ></a>
+        <a href="https://www.linkedin.com/in/chris-lawrence-99627554/#" rel="noopener" target="_blank"
+          title="My linkedin Page">
+          <i class="fa fa-linkedin fa-shake fa-2x"> </i>
+        </a>
 
-        <a
-          href="https://www.facebook.com/chrossl#"
-          target="_blank"
-          rel="noopener"
-          title="My facebook Page"
-          ><i class="fa fa-facebook fa-flip fa-2x"></i
-        ></a>
+        <a href="https://www.facebook.com/chrossl#" target="_blank" rel="noopener" title="My facebook Page">
+          <i class="fa fa-facebook fa-flip fa-2x"> </i>
+        </a>
       </div>
-    </footer>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-  </body>
+    </div>
+  </footer>
+  <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+
 </html>
