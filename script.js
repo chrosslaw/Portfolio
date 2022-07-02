@@ -28,3 +28,14 @@ window.onclick = function (e) {
     }
   }
 };
+
+const aboutText = document.getElementById(textcard);
+function loadDoc(id) {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function () {
+    document.getElementById(id).innerHTML = this.responseText;
+  };
+  xhttp.open("GET", "/resources/about.txt");
+  xhttp.send();
+}
+aboutText.onload = loadDoc("textcard");
