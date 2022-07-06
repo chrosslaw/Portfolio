@@ -15,6 +15,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #258efa;
+  overflow:hidden;
 }
 
 /* ^^^ NavBar ^^^ */
@@ -34,8 +35,9 @@ nav {
   min-height: 25vh;
   min-width: 100%;
   background-color: #1c3a94;
-
+  bottom: 0;
   text-align: center;
+  overflow:hidden;
 }
 
 .footer .footer-top,
@@ -47,20 +49,6 @@ nav {
 /*  ^^^ Header/Footer Styling ^^^  */
 /*------------------------------------------*/
 /* vvv Main Content Background Styling vvv */
-
-
-div.grid-container {
-  display: grid;
-  margin: 0px;
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-  grid-auto-rows: auto;
-}
-
-.row{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 .middle-column div{

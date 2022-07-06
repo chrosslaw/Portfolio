@@ -28,14 +28,15 @@ window.onclick = function (e) {
     }
   }
 };
+//AJAX textcard
 
-const aboutText = document.getElementById(textcard);
 function loadDoc(id) {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function () {
     document.getElementById(id).innerHTML = this.responseText;
   };
-  xhttp.open("GET", "/resources/about.txt");
+  xhttp.open("GET", "./resources/about.txt");
   xhttp.send();
 }
+const aboutText = document.getElementById(textcard);
 aboutText.onload = loadDoc("textcard");
