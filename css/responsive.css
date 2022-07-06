@@ -2,7 +2,7 @@
 @media screen and (max-width: 810px) {
   #textcard {
     font-size: 1.25em;
-    width: 90%;
+    width: 85%;
   }
   .about-head {
     max-width:90%;
@@ -45,17 +45,8 @@
     font-size: 5vw;
   }
 
-  #contact-box {
-    height: 25vh;
-    width: 25vw;
-  }
+  #contact-box{
+    width:50vw;
 
-  .row {
-    display: block;
-  }
-  
-  .middle-column {
-  
-    position: inherit;
   }
 }

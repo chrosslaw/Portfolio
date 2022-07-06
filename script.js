@@ -6,7 +6,7 @@ let body = document.querySelector("body");
 revealButton.onclick = function () {
   let box = document.getElementById("contact-box");
   box.className = "bounce-in-top";
-  box.style.display = "flex";
+  box.style.display = "block";
 };
 //Function to close the contact box when clicked
 closeButton.onclick = function () {
