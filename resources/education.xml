@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completed_coursework>
+  <courses category="computer_science">
+    <course>Progamming Fundamentals</course>
+    <course>Progamming 1</course>
+    <course>Progamming 2</course>
+    <course>Computer Systems</course>
+    <course>Communications and Networking</course>
+    <course>Databases 1</course>
+    <course>Operating Systems 1</course>
+    <course>Software Engineering</course>
+    <course>Web Programming</course>
+  </courses>
+  <courses category="non_cs">
+    <course>Online Education Strategies</course>
+    <course>College Algebra</course>
+    <course>English Composition 2</course>
+    <course>Introduction to Statistics</course>
+    <course>Art History</course>
+    <course>Introduction to Environmental Sciences</course><course></course>
+    <course>Emotional Intelligence</course>
+    <course>Greek and Roman Civilization</course>
+    <course>Ethics and Social Responsibility</course>
+  </courses>
+</completed_coursework>
